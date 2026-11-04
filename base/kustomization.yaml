@@ -27,8 +27,6 @@ resources:
  - recommendationservice.yaml
  - shippingservice.yaml
 
- - test-configmap.yaml
-
 images:
   - name: adservice
     newName: us-central1-docker.pkg.dev/online-boutique-ci/microservices-demo/adservice
