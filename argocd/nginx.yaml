@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 
 metadata:
-  name: nginx-gateway-fabric
+  name: nginx-gateway-fabric-api
   namespace: argocd
 
 spec:
