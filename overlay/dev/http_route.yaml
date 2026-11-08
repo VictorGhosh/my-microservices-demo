@@ -1,0 +1,20 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: HTTPRoute
+metadata: 
+  name: frontend-external 
+
+spec:
+  parentRefs:
+    - name: boutique
+      namespace: ngf-system
+      
+  hostnames:
+    - "boutique.dev"
+  rules:
+    - matches:
+        - path:
+            type: PathPrefix
+            value: /
+      backendRefs:
+        - name: frontend-external
+          port: 80

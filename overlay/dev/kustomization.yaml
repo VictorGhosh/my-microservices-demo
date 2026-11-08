@@ -4,6 +4,7 @@ namespace: dev
 
 resources:
   - ../../base
+  - http_route.yaml
 
 components:
   - ../../components/loadgenerator/
