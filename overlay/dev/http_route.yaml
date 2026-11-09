@@ -9,7 +9,7 @@ spec:
       namespace: ngf-system
       
   hostnames:
-    - "boutique.dev"
+    - "boutique-dev.kube"
   rules:
     - matches:
         - path:
