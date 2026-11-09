@@ -4,6 +4,7 @@ namespace: prod
 
 resources:
   - ../../base
+  - http_route.yaml
 
 replicas:
 - name: shippingservice
